@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 import nltk
-
-# ntlk.download()
+nltk.download('punkt')
 
 document = "The quick fox jumped over the lazy brown dog."
 
