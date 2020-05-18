@@ -2,6 +2,8 @@
 
 import nltk
 
+print("Downloading NLTK components")
+
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('maxent_ne_chunker')
