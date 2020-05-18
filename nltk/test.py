@@ -6,7 +6,7 @@ from pprint import pprint as pp
 
 
 def separator():
-    print("~" * 21)
+    print("~" * 20)
 
 
 separator()
