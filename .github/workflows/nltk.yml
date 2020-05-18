@@ -30,6 +30,7 @@ jobs:
         python3 --version
         pip3 install nltk
         pip3 install sklearn
+        pip3 install pycodestyle
         python3 nltk/configure.py
     
     # Runs a single command using the runners shell
