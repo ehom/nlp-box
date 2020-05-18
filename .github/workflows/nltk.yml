@@ -27,6 +27,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Configure Build Environment for NLTK
       run: |
+        python3 --version
         pip3 install nltk
         python3 nltk/configure.py
     
