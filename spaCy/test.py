@@ -11,7 +11,7 @@ doc = nlp("She ate the pizza")
 for token in doc:
     print(token.text, token.pos_, token.dep_, token.head.text)
 
-print('~' * 20)
+print('~' * 21)
 
 # Process some text
 doc = nlp(u"Apple is looking at buying U.K. startup for $1 billion")
