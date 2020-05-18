@@ -1,6 +1,6 @@
 # nlp-box
 
-This repo contains some sample work in [nltk](https://www.nltk.org/) as well as [spaCy](https://spacy.io/).
+This repo contains some sample work in [NLTK](https://www.nltk.org/) as well as [spaCy](https://spacy.io/).
 
 
 
