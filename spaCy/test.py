@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 
 import spacy
+import sys
 
 nlp = spacy.load("en_core_web_sm")
 
-print('~' * 21)
 
+def separator():
+    print('~' * 21)
+
+
+separator()
+print("Python version is {}".format(sys.version))
+print("\nspaCy version is {}".format(spacy.__version__))
+
+separator()
 doc = nlp("She ate the pizza")
 
 # Predicting Syntactic Dependencies
@@ -13,7 +22,7 @@ doc = nlp("She ate the pizza")
 for token in doc:
     print(token.text, token.pos_, token.dep_, token.head.text)
 
-print('~' * 21)
+separator()
 
 # Process some text
 doc = nlp(u"Apple is looking at buying U.K. startup for $1 billion")
@@ -23,9 +32,10 @@ for ent in doc.ents:
     # Print the entity text and its label
     print(ent.text, ent.label_)
 
-print('~' * 21)
+separator()
 
-text = "It’s official: Apple is the first U.S. public company to reach a $1 trillion market value"
+text = """It’s official: Apple is the first U.S. public company
+       to reach a $1 trillion market value"""
 
 # Process the text
 doc = nlp(text)
