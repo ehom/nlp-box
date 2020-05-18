@@ -8,7 +8,7 @@ on:
   push:
     branches: [ master ]
     paths:
-      - '!spaCy/**'
+      - 'nltk/**'
   pull_request:
     branches: [ master ]
 
@@ -28,7 +28,6 @@ jobs:
     - name: Configure Build Environment for NLTK
       run: |
         python3 --version
-        python --version
         pip3 install nltk
         python3 nltk/configure.py
     
