@@ -11,7 +11,7 @@ def separator():
 separator()
 print("Text: {}".format(document))
 
-tokens = nltk.word_tokenize(document)
+tokens = nltk.word_tokenize(document.lower())
 
 separator()
 print("Tokens:")
