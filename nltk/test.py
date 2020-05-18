@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
+import sys
 import nltk
 from pprint import pprint as pp
+
+print("Using Python: {}".format(sys.version))
+# print(sys.version_info)
 
 document = "The quick fox jumped over the lazy brown dog."
 
