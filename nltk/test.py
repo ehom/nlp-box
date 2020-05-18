@@ -6,7 +6,7 @@ from pprint import pprint as pp
 document = "The quick fox jumped over the lazy brown dog."
 
 def separator():
-    print("~" * 20)
+    print("~" * 21)
 
 separator()
 print("Text: {}".format(document))
