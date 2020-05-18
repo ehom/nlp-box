@@ -27,7 +27,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Set up env for spaCy
       run: |
-        python --version
         python3 --version
         pip3 install spacy
         python3 spaCy/configure.py
